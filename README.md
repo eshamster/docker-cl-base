@@ -1,6 +1,6 @@
 # Dockerfile: cl-base
 
-A Dockerfile to configure Common Lisp execution environment.
+A Dockerfile to configure Common Lisp execution environment based on Alpine Linux (from 2.0~).
 
 ## Installation
 
@@ -15,7 +15,7 @@ Note: `/home/dev/work/lisp` is a sym-link to `/home/dev/.roswell/local-projects`
 
 This mainly consists of ...
 
-- CentOS 7.0
+- Alpine Linux (with glibc)
 - Roswell
   - The following CL implementations are installed in default
     - sbcl-bin
