@@ -22,3 +22,4 @@ RUN apk add --no-cache make curl-dev && \
     ros run -q
 
 RUN ln -s ${HOME}/.roswell/local-projects work
+ENV PATH /root/.roswell/bin:${PATH}
