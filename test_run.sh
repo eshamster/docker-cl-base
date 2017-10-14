@@ -3,7 +3,7 @@
 set -eu
 
 name=eshamster/cl-base
-ver=2.2
+ver=2.3
 
 docker rmi $(docker images | awk '/^<none>/ { print $3 }') || echo "ignore rmi error"
 docker rm `docker ps -a -q` || echo "ignore rm error"

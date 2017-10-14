@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc:alpine-3.5
+FROM frolvlad/alpine-glibc:alpine-3.6
 
 ARG work_dir=/tmp/setup
 RUN mkdir ${work_dir} && \
@@ -23,3 +23,5 @@ RUN apk add --no-cache make curl-dev && \
 
 RUN ln -s ${HOME}/.roswell/local-projects work
 ENV PATH /root/.roswell/bin:${PATH}
+
+RUN apk add --no-cache openssl-dev
