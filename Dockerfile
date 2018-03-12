@@ -8,10 +8,10 @@ RUN mkdir ${work_dir} && \
 
 RUN apk add --no-cache --virtual=for-build git automake autoconf make gcc build-base curl-dev glib-dev && \
     cd ${work_dir} && \
-    git clone -b release https://github.com/roswell/roswell.git && \
+    git clone --depth=1 -b release https://github.com/roswell/roswell.git && \
     cd roswell && \
     sh bootstrap && \
-    ./configure && \
+    ./configure --disable-manual-install && \
     make && \
     make install && \
     cd .. && \
