@@ -6,7 +6,7 @@ A Dockerfile to configure Common Lisp execution environment based on Alpine Linu
 
 ```bash
 $ docker pull eshamster/cl-base
-$ docker run -v <a host folder>:/home/dev/work/lisp -it eshamster/cl-base /bin/bash
+$ docker run -v <a host folder>:/home/dev/work/lisp -it eshamster/cl-base /bin/ash
 ```
 
 Note: `/home/dev/work/lisp` is a sym-link to `/home/dev/.roswell/local-projects`
