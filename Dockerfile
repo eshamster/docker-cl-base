@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-glibc:alpine-3.9
+FROM frolvlad/alpine-glibc:alpine-3.12
 
 ARG work_dir=/tmp/setup
 RUN mkdir ${work_dir} && \
